@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   resources :products
   root 'welcome#home'
 
-  get 'welcome/about'
-
+  #get 'welcome/about'
+  #get '/check' =>'evens#checkNumberEven'
+  get '/about' => 'welcome#about'
   get 'welcome/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
